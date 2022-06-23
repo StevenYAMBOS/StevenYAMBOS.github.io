@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Encodage de la page -->
+    <meta charset="utf-8">
+    <title>Contact - Portfolio Steven YAMBOS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ajouter une "Favicon" -->
+    <link rel="icon" type="image/jpg" href="images/logo-v1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="top-banner">En recherche d'alternance dans le développement WEB ou MOBILE</div>
+    
+        <!-- Menu de navigation -->
+        <nav class="nav-contact">
+            <!-- Réseaux sociaux + Logo -->
+            <div class="ligne1">
+                <div class="social-media-contact">
+                    <!-- target blank pour ouvrir une autre page quand on clique sur le lien -->
+                    <a href="https://github.com/StevenYAMBOS" target="_blank"><img src="/images/github2.png" width="20px" height="20px"></a>
+                <a href="https://www.linkedin.com/in/steven-yambos-7392361b2/" target="_blank"><img src="/images/linkedin2.png"
+                    width="20px" height="20px"></a>
+                <a href="https://www.youtube.com/channel/UC1kyVh5DXF2VC7PK44OADVg/featured" target="_blank"><img
+                        src="/images/youtube2.png" width="20px" height="20px"></a>
+                </div>
+        
+            </div>
+            <div class="logo-contact">
+                <a href="/accueil.html"><img src="/images/logo-v1.png" alt="logo portfolio steven yambos" width="45px" height="45px"></a>
+            </div>
+
+
+            <!-- Menus -->
+            <div class="ligne2">
+                <ul class="accueil">
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <main id="main-contact">
+        <div id="contact-container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h1>Envoyez-moi vos commentaires !</h1>
+                <label class="label" for="nom">Nom :</label>
+                <input type="text" id="nom" placeholder="Nom/prénom" required>
+                <label class="label" for="mail">Email</label>
+                <input type="email" id="mail" placeholder="Adresse mail" required>
+                <label class="label" for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Écrivez votre message..."></textarea>
+                <button id="button" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

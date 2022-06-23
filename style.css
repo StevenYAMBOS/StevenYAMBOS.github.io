@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+/* Racine du CSS
+"-- sont des variables en CSS" */
+:root{
+    --texte:black;
+    --background:white;
+    --bouton:rgb(67, 67, 67);
+    --textButon:white;
+}
+
+/* Top message  */
+.top-banner{
+    font-size: 12pt;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    position:sticky;
+}
+
+/* Body général */
+body{
+    padding:0;
+    margin:0;
+    background: var(--background);
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ____________________HEADER____________________ */
+header{
+    width: 100%;
+    /* 100vh = hauteur d'écran */
+    height: 100vh;
+    background-image:url(/images/header.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+
+/* Barre de navigation générale */
+nav{
+    width: 100%;
+    display: flex;
+    /* Faire rentrer tous les éléments lorsqu'il n'y a pas assez de place */
+    flex-direction: column;
+    /* Bloquer la barre de navigation lorsqu'on scroll */
+    position:sticky;
+    top:0%;
+    background-color: #0005;
+}
+
+/* Ul */
+nav .accueil{
+    /* Enlever ces satanées puces */
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    
+}
+nav ul li a{
+    /* Espace entre les menus */
+    padding-inline: 25px;
+    color: white;
+    /* Enlever les barres */
+    text-decoration: none;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.219);
+}
+
+.ligne1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Réseaux sociaux */
+.social-media{
+    align-items: left;
+    padding: 20px;
+}
+/* Espace entre les éléments (réseaux sociaux) */
+.social-media a{
+    padding-inline: 5px;
+}
+
+/* Logo */
+.logo{
+    text-align: center;
+    margin-top: -50px;
+    cursor: pointer;
+    z-index: -1;
+}
+
+/* Icône du soleil */
+i{
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+
+/* Texte : Moi c'est Steven YAMBOS... */
+#text{
+    padding-top: 100px;
+    color: white;
+    font-weight:lighter;
+    font-size: 40pt;
+    text-align: center;
+}
+
+
+/* ____________________MAIN____________________ */
+/* Section/Div "projets réalisés" */
+.section-projets{
+    margin-top: 10%; 
+}
+/* Titre */
+main h1{
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30pt;
+}
+/* Div qui regroupe les blocs */
+.flex{
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    /* Espace entre les éléments flex */
+    gap: 20px;
+    margin-top: -20px; 
+}
+/* Class de chaque bloc de div */
+.projets{
+    text-align: center;
+    width: auto;
+}
+/* Titres */
+.projets h4{
+    color: var(--texte);
+    font-weight:bold;
+    font-size:16pt;
+    text-align: center;
+}
+/* Boutons "En savoir plus" */
+.projets button{
+    border-radius: 8px;
+    background-color: var(--bouton);
+    color: var(--textButon);
+    border: 1px solid black;
+
+}
+.projets button:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+
+.description{
+    color: var(--texte);
+}
+
+/* ____________________________________________________________ */
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    background-color: black;
+    margin-top: 15%;
+}
+
+/* Logo footer */
+.logo-footer{
+    text-align: center;
+    margin: 3%;
+    cursor: pointer;
+}
+.logo-footer figcaption{
+    text-align: center;
+    color: white;
+    font-size: 9pt;
+    letter-spacing: 2px;
+}
+
+/* Texte */
+#p{
+    text-align: center;
+    color: white;
+}
+
+/* icônes */
+.downPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Copyright "C Steven YAMBOS" */
+footer #copyright{
+    color: white;
+    text-align: center;
+    font-size: 8pt;
+    padding-top: 10px;
+}
+
+/* ________________________PAGE PROJETS________________________ */
+
+/* /!\ #projets = body de la page projet /!\ */
+#projets::before, ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+#projets header{
+    height: 100vh;
+    background-image: url(/images/keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container-first{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.container-first h1{
+    color: white;
+    font-size: 100pt;
+}
+
+.container-first h1 span{
+    position: relative;
+}
+
+.lignes{
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+.l1{
+    width: 250px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+}
+.l2{
+    width: 140px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    position: relative;
+    top: 80px;
+}
+
+.logo-projets{
+    position: absolute;
+    right: 2.9%;
+    top: 11%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.medias{
+    position: absolute;
+    right: 3.3%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bulle{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+.logo-medias{
+    width: 40px;
+    height: 40px;
+}
+
+/* Conteneur de "languages" */
+.bloc-skills{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+/* Conteneur des images png */
+.languages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 150px;
+}
+/* Figure qui contient les images */
+figure{
+    text-align: center;
+    color: black;
+    font-size: 24pt;
+    font-weight: bold;
+}
+/* Légende images */
+figcaption{
+    margin-top: 30px;
+}
+/* Images PNG */
+.languages-png{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+/* Conteneur de "languages" */
+.bloc-logiciels{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+/* Conteneur des images "logiciels" */
+.logiciels{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 150px;
+}
+/* Figure qui contient les images logiciels*/
+figure{
+    text-align: center;
+    color: black;
+    font-size: 24pt;
+    font-weight: bold;
+}
+/* Légende images logiciels*/
+figcaption{
+    margin-top: 30px;
+}
+/* Images logiciels */
+.logiciels-png{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+
+.titre h2{
+    color: #9e1919;
+    padding-bottom: 15px;
+}
+
+
+.section-conteneur{
+    /* background-color: black; */
+}
+
+/* Titre des sections */
+.grand-titre{
+    text-align: left;
+    color: black;
+    margin-left: 15px;
+    padding-top: 6%;
+    padding-bottom: 20px;
+    font-size: 30pt;
+}
+
+/* Images chaîne Youtube */
+.section-image{
+    width: 632px;
+}
+
+/* Conteneur des images + textes */
+.ensemble{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    background-color: #fbfbfc;
+}
+
+/* Image chaîne Youtube */
+.div-image{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Texte sur le côté droit */
+ .div-texte{
+     display: flex;
+     flex-direction: column;
+ }
+
+ /* Section projets futurs */
+ .projet2{
+     width: 100%;
+     background-color: #181818;
+     border-radius: 20px;
+     margin-top: 6%;
+ }
+
+ /* Div projets futurs */
+ .bloc2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:10%;
+    margin-right: 10%;
+
+ }
+
+ .titre h3{
+     margin-top: -15px;
+     color: white;
+     font-weight: bold;
+ }
+
+/* _____________________PAGE CONTACT____________________ */
+
+/* Body de la page contact */
+ #main-contact{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 100vh;
+ }
+
+.nav-contact{
+    background-color: black;
+    position: relative;
+}
+
+.ligne1-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.logo-contact{
+        text-align: center;
+        margin-top: -50px;
+        cursor: pointer;
+        z-index: 2;
+}
+
+/* Réseaux sociaux */
+.social-media-contact{
+    align-items: left;
+    padding: 20px;
+    z-index: 3;
+}
+/* Espace entre les éléments (réseaux sociaux) */
+.social-media-contact a{
+    padding-inline: 5px;
+}
+
+ #contact-container{
+     position: absolute;
+     margin-top: 50vh;
+     padding-bottom: 6%;
+     transform: translateY(-50%, -50%);
+     
+ }
+
+ form h1{
+     color: #9e1919;
+     margin-top: 5px;
+     text-align: center;
+ }
+
+ main form{
+     background-color: #181818;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     padding: 2vw 4vw;
+     width: 90%;
+     max-width: 600px;
+ }
+
+ form input, form textarea{
+     border:0;
+     margin: 10px 0;
+     padding: 20px;
+     outline:none;
+     background: white;
+     border: 1px solid #282828;
+     font-size: 14pt;
+ }
+
+ .label{
+     font-size: 16pt;
+     color: white;
+ }
+ 
+ #button{
+     padding: 15px;
+     background-color: #9e1919;
+     border-radius: 10px;
+     border: none;
+    color: white;
+    outline:none;
+    cursor: pointer;
+    margin: 40px auto 0;
+ }
+
+
+
+
+
+ 
