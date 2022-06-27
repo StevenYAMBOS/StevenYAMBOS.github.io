@@ -23,31 +23,9 @@ new Typewriter(txtAnim, {
 
 // PAGE PROJETS
 
-// Sélectionner le Span du HTML
-const titreSpans = document.querySelector('.container-first h1 span');
-const logo = document.querySelector('.logo-projets');
-const medias = document.querySelectorAll('.bulle');
-const l1 = document.querySelector('.l1');
-const l2 = document.querySelector('.l2');
 
-// Une fois que le site aura chargé on va créer une timeline qui va lancer l'animation
-window.addEventListener('load', () => {
-    // Créer la timeline
-    // "gsap" = nom de la librairie
-    // "paused: true" pour que l'animation soit sur pause de base
-    var tl = gsap.timeline();
 
-    // Animer plusieurs élément les uns à la suite des autres
-    // StaggerFrom donc on va aller d'un endroit à un autre (from), ici le stagger dure 0.3s donc les span seront animer durant ce temps
-    tl.from(titreSpans, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-    .from(l1, 1, {width: 0, ease: "power2.out"}, '-=2')
-    .from(l2, 1, {width: 0, ease: "power2.out"}, '-=2')
-    .from(logo, 0.4, {transform: "scale(0)", ease: "power2.out"}, '-=2')
-    .staggerFrom(medias, 1, {right: -200, ease: "power2.out"}, 0.3, '-=1');
 
-    // Lancer l'animation
-    tl.play();
-});
 
 
 // Bouton "Dark Mode"
