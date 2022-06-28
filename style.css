@@ -10,6 +10,30 @@
     --textButon:white;
 }
 
+/* Bouton de scroll */
+#scrollUp-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #9e1919;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.5s;
+}
+#scrollUp-btn:hover{
+    transition: 0.5s;
+    color: #9e1919;
+    background: white;
+}
+
+
 /* Top message  */
 .top-banner{
     font-size: 12pt;
