@@ -135,7 +135,11 @@ i{
     cursor: pointer;
 }
 
-
+/* Bouton pour le responsive */
+.burger {
+    display:none;
+  }
+  
 /* Texte : Moi c'est Steven YAMBOS... */
 #text{
     padding-top: 100px;

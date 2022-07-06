@@ -1,0 +1,56 @@
+/*  Small device */
+@media screen and (max-width:767.98px) {
+    .accueil { 
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      width:0;
+      height:calc(100vh - 65px);  
+      position:absolute;
+      top:65px;
+      right:0;    
+      transform: translateX(110%);
+      transition: all .5s ease-in-out;
+    }
+}
+
+@media screen and (min-width : 768px) {
+   
+    .navbar-link > a::after{
+        display:block;
+        content:"";
+        width:0;
+        height:1px;
+        transition:width .4s;
+    }
+    .navbar-link:hover > a::after{
+        width: 100%;
+    }
+
+
+
+
+
+    .section-projets{
+        display: block;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+    .container-cards{
+        width: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .card{
+
+    }
+
+}

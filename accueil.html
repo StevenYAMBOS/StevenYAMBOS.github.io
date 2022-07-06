@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <title>Accueil - Portfolio Steven YAMBOS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Ajouter une "Favicon" -->
     <link rel="icon" type="image/jpg" href="images/logo-v1.png" alt="logo portfolio steven yambos">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,11 +50,12 @@
             <!-- Menus -->
             <div class="ligne2">
                 <ul class="accueil">
-                    <li><a href="accueil.html">Accueil</a></li>
-                    <li><a href="projets.html">Projets</a></li>
-                    <li><a href="contacts.html">Contact</a></li>
+                    <li class="navbar-link"><a href="accueil.html">Accueil</a></li>
+                    <li class="navbar-link"><a href="projets.html">Projets</a></li>
+                    <li class="navbar-link"><a href="contacts.html">Contact</a></li>
                 </ul>
             </div>
+            <button class="burger"></button>
         </nav>
 
         <h1 id="text"></h1>
@@ -71,6 +74,7 @@
                                 <h2>Développement mobile</h2>
                             </div>
                         </div>
+                        <!-- Contenu à l'intérieur de la carte -->
                         <div class="face face2">
                             <div class="content">
                                 <p>Depuis Novembre 2021 je développe une application mobile
