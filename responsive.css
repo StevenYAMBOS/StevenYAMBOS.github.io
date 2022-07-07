@@ -1,56 +1,76 @@
 /*  Small device */
-@media screen and (max-width:767.98px) {
-    .accueil { 
-      overflow:hidden;
-      display:flex;
-      flex-direction:column;
-      width:0;
-      height:calc(100vh - 65px);  
-      position:absolute;
-      top:65px;
-      right:0;    
-      transform: translateX(110%);
-      transition: all .5s ease-in-out;
+@media screen and (max-width: 999px) {
+
+    nav{
+        width: 100%;
+        position: relative;
+        display: block;
+        top:0%;
+        background-color: #0005;
     }
+
+    /* Ul */
+nav .accueil{
+    /* Enlever ces satanées puces */
+    list-style-type: none;
+    padding-bottom:15px ;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}
+nav ul li a{
+    color: white;
+    /* Enlever les barres */
+    text-decoration: none;
+    font-size: 13pt;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.219);
 }
 
-@media screen and (min-width : 768px) {
-   
-    .navbar-link > a::after{
-        display:block;
-        content:"";
-        width:0;
-        height:1px;
-        transition:width .4s;
-    }
-    .navbar-link:hover > a::after{
-        width: 100%;
-    }
+
+/* Réseaux sociaux */
+.social-media{
+    /* supprimer un élément */
+    display: none;
+}
+
+/* Logo */
+.logo{
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+    z-index: -1;
+}
+
+/* Icône du soleil */
+i{
+    /* Supprimer (pas chacher pour ça on utilise visibility: hidden) un élément */
+    display: none;
+  
+}
 
 
+/* SECTION : Projets réalisés */
 
-
-
-    .section-projets{
-        display: block;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-    }
-    .container-cards{
-        width: auto;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-    .card{
-
-    }
-
+.section-projets{
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.container-cards{
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
 }
