@@ -36,12 +36,28 @@
 
 /* Top message  */
 .top-banner{
-    font-size: 12pt;
+    width: 98%;
+    padding: 1px;
     text-align: center;
     background-color: black;
     color: white;
-    padding: 15px;
     position:sticky;
+    overflow: hidden;
+    /* La propriété white-space est utilisée pour décrire la façon dont les blancs sont gérés au sein de l'élément.
+    Nowrap = mettre en ligne. */
+    white-space: nowrap;
+}
+.top-banner p{
+    display: inline-block;
+    padding-left: 100%;
+    animation: animate 7s linear infinite;
+    font-size: 12pt;
+}
+
+@keyframes animate {
+    100%{
+        transform: translate(-100%, 0)
+    }
 }
 
 /* Body général */
