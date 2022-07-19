@@ -608,6 +608,33 @@ hr{
     width: 80%;
 }
 
+/* BOUTON CONTACT */
+#section-contactBtn{
+    padding-top: 15%;
+    width: 100%;
+    text-align: center;
+}
+#contactBtn{
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+    color: #fff;
+    background: #9e1919;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 8px  15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease 0s;
+    outline: none;
+    letter-spacing: 2.5px;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+#contactBtn:hover {
+    background: linear-gradient(to right, red, #9e1919);
+    box-shadow: 0px 8px 15px rgba(229, 46, 46, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
 
 
 
