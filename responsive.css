@@ -4,6 +4,8 @@
     /* Bouton de scroll */
 #scrollUp-btn{
     position: fixed;
+    text-align: center;
+    align-items: center;
     bottom: 20px;
     right: 20px;
     z-index: 99;
