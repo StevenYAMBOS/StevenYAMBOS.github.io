@@ -1,3 +1,5 @@
-(Responsive en cours de développement)
+<h1>ANCIEN PORTFOLIO</h1>
 
-Bienvenu sur mon portfolio.
+Ce portfolio est le 1er projet web que j'ai mis en ligne.
+
+(Responsive en cours de développement)
